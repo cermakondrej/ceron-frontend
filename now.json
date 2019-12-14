@@ -1,0 +1,34 @@
+{
+  "version": 2,
+  "name": "ceron-frontend",
+  "alias": ["ceron", "ceron.cz"],
+  "regions": ["bru"],
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "build": {
+    "env": {
+      "NODE_ENV": "production"
+    }
+  },
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": {
+        "maxLambdaSize": "35mb"
+      }
+    }
+  ],
+  "routes": [
+    { "src": "/_nuxt/(.*)", "dest": "/_nuxt/$1", "headers": { "cache-control": "s-maxage=31536000" } },
+    { "src": "/sounds/(.*)", "dest": "/sounds/$1" },
+    { "src": "/fonts/(.*)", "dest": "/fonts/$1" },
+    { "src": "/js/(.*)", "dest": "/js/$1" },
+    { "src": "/icons/(.*)", "dest": "/icons/$1" },
+    { "src": "/favicon.ico", "dest": "/favicon.ico" },
+    { "src": "/.well-known/assetlinks.json", "dest": "/.well-known/assetlinks.json" },
+    { "src": "/sw.js", "dest": "/sw.js" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
