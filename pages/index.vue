@@ -11,7 +11,7 @@
           <fa :icon="fab.faLinkedinIn" />
         </a>
         <a
-          href="https://github.com/cerondevs"
+          href="https://github.com/ceroncz"
           target="_blank"
           class="button github"
         >
