@@ -24,47 +24,10 @@ html {
   margin: 0;
 }
 
-.button--linkedin {
+.button {
   display: inline-block;
-  border-radius: 6px;
-  border: 1px solid #2867b2;
-  color: #2867b2;
   text-decoration: none;
-  padding: 10px 15px;
-}
-
-.button--linkedin:hover {
-  color: #fff;
-  background-color: #2867b2;
-}
-
-.button--github {
-  display: inline-block;
   border-radius: 6px;
-  border: 1px solid #211f1f;
-  color: #211f1f;
-  text-decoration: none;
-  padding: 10px 15px;
-  margin-left: 5px;
-}
-
-.button--github:hover {
-  color: #fff;
-  background-color: #211f1f;
-}
-
-.button--instagram {
-  display: inline-block;
-  border-radius: 6px;
-  border: 1px solid #c13584;
-  color: #c13584;
-  text-decoration: none;
-  padding: 10px 15px;
-  margin-left: 5px;
-}
-
-.button--instagram:hover {
-  color: #fff;
-  background-color: #c13584;
+  padding: 11px 16px 8px 16px;
 }
 </style>

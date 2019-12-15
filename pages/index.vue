@@ -6,21 +6,21 @@
         <a
           href="https://www.linkedin.com/in/0ndrejcermak/"
           target="_blank"
-          class="button--linkedin"
+          class="button linkedin"
         >
           <fa :icon="fab.faLinkedinIn" />
         </a>
         <a
           href="https://github.com/cerondevs"
           target="_blank"
-          class="button--github"
+          class="button github"
         >
           <fa :icon="fab.faGithub" />
         </a>
         <a
           href="https://www.instagram.com/oonacermak/"
           target="_blank"
-          class="button--instagram"
+          class="button instagram"
         >
           <fa :icon="fab.faInstagram" />
         </a>
@@ -61,5 +61,36 @@ export default {
 .links {
   padding-top: 25px;
   font-size: 22px;
+}
+.linkedin {
+  border: 1px solid #2867b2;
+  color: #2867b2;
+}
+
+.linkedin:hover {
+  color: #fff;
+  background-color: #2867b2;
+}
+
+.github {
+  border: 1px solid #211f1f;
+  color: #211f1f;
+  margin-left: 5px;
+}
+
+.github:hover {
+  color: #fff;
+  background-color: #211f1f;
+}
+
+.instagram {
+  border: 1px solid #c13584;
+  color: #c13584;
+  margin-left: 5px;
+}
+
+.instagram:hover {
+  color: #fff;
+  background-color: #c13584;
 }
 </style>
