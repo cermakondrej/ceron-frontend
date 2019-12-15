@@ -24,32 +24,47 @@ html {
   margin: 0;
 }
 
-.button--green {
+.button--linkedin {
   display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
+  border-radius: 6px;
+  border: 1px solid #2867b2;
+  color: #2867b2;
   text-decoration: none;
-  padding: 10px 30px;
+  padding: 10px 15px;
 }
 
-.button--green:hover {
+.button--linkedin:hover {
   color: #fff;
-  background-color: #3b8070;
+  background-color: #2867b2;
 }
 
-.button--grey {
+.button--github {
   display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
+  border-radius: 6px;
+  border: 1px solid #211f1f;
+  color: #211f1f;
   text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
+  padding: 10px 15px;
+  margin-left: 5px;
 }
 
-.button--grey:hover {
+.button--github:hover {
   color: #fff;
-  background-color: #35495e;
+  background-color: #211f1f;
+}
+
+.button--instagram {
+  display: inline-block;
+  border-radius: 6px;
+  border: 1px solid #c13584;
+  color: #c13584;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin-left: 5px;
+}
+
+.button--instagram:hover {
+  color: #fff;
+  background-color: #c13584;
 }
 </style>

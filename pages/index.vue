@@ -2,22 +2,27 @@
   <div class="container">
     <div>
       <logo />
-      <h1 class="title">
-        ceron-frontend
-      </h1>
-      <h2 class="subtitle">
-        Ceron site
-      </h2>
       <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
+        <a
+          href="https://www.linkedin.com/in/0ndrejcermak/"
+          target="_blank"
+          class="button--linkedin"
+        >
+          <fa :icon="fab.faLinkedinIn" />
         </a>
         <a
-          href="https://github.com/nuxt/nuxt.js"
+          href="https://github.com/cerondevs"
           target="_blank"
-          class="button--grey"
+          class="button--github"
         >
-          GitHub
+          <fa :icon="fab.faGithub" />
+        </a>
+        <a
+          href="https://www.instagram.com/oonacermak/"
+          target="_blank"
+          class="button--instagram"
+        >
+          <fa :icon="fab.faInstagram" />
         </a>
       </div>
     </div>
@@ -25,11 +30,21 @@
 </template>
 
 <script>
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { fas } from '@fortawesome/free-solid-svg-icons'
 import Logo from '~/components/Logo.vue'
 
 export default {
   components: {
     Logo
+  },
+  computed: {
+    fab() {
+      return fab
+    },
+    fas() {
+      return fas
+    }
   }
 }
 </script>
@@ -43,26 +58,8 @@ export default {
   align-items: center;
   text-align: center;
 }
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
 .links {
-  padding-top: 15px;
+  padding-top: 25px;
+  font-size: 22px;
 }
 </style>

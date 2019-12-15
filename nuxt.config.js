@@ -4,7 +4,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Ceron.cz - Software development',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -40,6 +40,7 @@ export default {
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
+    'nuxt-fontawesome',
     '@nuxtjs/axios'
   ],
   /*
@@ -47,6 +48,9 @@ export default {
    ** See https://axios.nuxtjs.org/options
    */
   axios: {},
+  fontawesome: {
+    component: 'fa'
+  },
   /*
    ** Build configuration
    */
